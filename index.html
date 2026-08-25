@@ -22,7 +22,8 @@
       <button data-goto="about">我是谁</button>
       <button data-goto="products">我的产品</button>
     </nav>
-    <button class="cta-pill" data-goto="products">知识星球</button><button class="menu-toggle" id="menu-toggle" aria-label="菜单">☰</button>
+    <button class="cta-pill" data-goto="products">知识星球</button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="菜单">☰</button>
   </div>
 </header>
 
@@ -72,11 +73,10 @@
         <h2 class="sec-title serif">我操盘过10多个赛道，不是只会讲AI一件事。</h2>
         <p class="sec-sub">影视摄影出身，做过IP孵化公司的项目组长，服务过二三十个老板级IP——咖啡、Web3、餐饮、医美、中医、乳业……不同赛道，逻辑不一样，但底层的判断方式是通的。</p>
       </div>
-      <div class="verticals-row">
+      <div class="verticals-row" style="margin-bottom:10px;">
         <span class="vchip">咖啡IP</span><span class="vchip">Web3</span><span class="vchip">餐饮矩阵</span>
-        <span class="vchip">医美</span><span class="vchip">中医</span><span class="vchip">乳业</span>
-        <span class="vchip">科学家IP</span><span class="vchip">AI自媒体</span>
       </div>
+      <p class="vchip-more" style="margin:0 0 46px;">下面详细拆的是这3个。另外还做过<b>医美、中医、乳业、科学家IP、AI自媒体</b>——这几个案例的细节没有放在公开页面上，知识星球里有具体拆解。</p>
 
       <div class="cases-grid">
         <div class="case-card">
@@ -193,145 +193,189 @@
               </div>
               <p class="promptlib-count mono" id="tool-count"></p>
               <div class="tool-grid" id="tool-grid">
-
-                <div class="tool-card" data-cat="对话类" data-text="chatgpt openai 对话通用">
-                  <div class="tool-card-top"><span class="tool-name">ChatGPT</span><span class="tool-access">需外网</span></div>
-                  <p class="tool-desc">OpenAI出品，用户量最大的AI对话工具，写作、编程、分析都能顶，综合能力最全面。</p>
-                  <p class="tool-how"><b>开通：</b>官网 chat.openai.com 注册账号，免费版够日常用，Plus订阅 $20/月解锁更强模型。</p>
-                </div>
-
-                <div class="tool-card" data-cat="对话类" data-text="claude anthropic 对话 写作 claude code">
-                  <div class="tool-card-top"><span class="tool-name">Claude</span><span class="tool-access">需外网</span></div>
-                  <p class="tool-desc">本站教学主打的工具，写作和长文本理解突出，也是"Claude Code"这类编程智能体的底座。</p>
-                  <p class="tool-how"><b>开通：</b>官网 claude.ai 注册，免费版有额度限制，Pro订阅解锁更多用量。</p>
-                </div>
-
-                <div class="tool-card" data-cat="对话类" data-text="gemini google 对话">
-                  <div class="tool-card-top"><span class="tool-name">Gemini</span><span class="tool-access">需外网</span></div>
-                  <p class="tool-desc">谷歌出品，跟Gmail、谷歌文档打通得好，处理图片和长文档能力强。</p>
-                  <p class="tool-how"><b>开通：</b>gemini.google.com，用谷歌账号直接登录。</p>
-                </div>
-
-                <div class="tool-card" data-cat="对话类" data-text="豆包 字节跳动 对话">
-                  <div class="tool-card-top"><span class="tool-name">豆包</span><span class="tool-access direct">可直连</span></div>
+                <div class="tool-card" data-cat="对话类" data-text="豆包 通用对话 语音 字节跳动出品，国内可直接用，速度快、免费额度大，还能语音对话，日常聊天写作够用。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://www.doubao.com" target="_blank" rel="noopener">豆包<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>通用对话</span><span>语音</span></div>
                   <p class="tool-desc">字节跳动出品，国内可直接用，速度快、免费额度大，还能语音对话，日常聊天写作够用。</p>
+                  <p class="tool-price"><b>价格：</b>基础功能免费，会员68/200/500元档</p>
                   <p class="tool-how"><b>开通：</b>豆包APP或官网 doubao.com，手机号一键注册。</p>
                 </div>
 
-                <div class="tool-card" data-cat="对话类" data-text="kimi 月之暗面 长文本">
-                  <div class="tool-card-top"><span class="tool-name">Kimi</span><span class="tool-access direct">可直连</span></div>
+                <div class="tool-card" data-cat="对话类" data-text="kimi 长文本 通用对话 月之暗面出品，主打超长文本处理，扔一整本书进去也能帮你总结，国内团队做的。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://kimi.moonshot.cn" target="_blank" rel="noopener">Kimi<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>长文本</span><span>通用对话</span></div>
                   <p class="tool-desc">月之暗面出品，主打超长文本处理，扔一整本书进去也能帮你总结，国内团队做的。</p>
+                  <p class="tool-price"><b>价格：</b>免费额度大，会员¥49/月起</p>
                   <p class="tool-how"><b>开通：</b>kimi.moonshot.cn，手机号注册即可用。</p>
                 </div>
 
-                <div class="tool-card" data-cat="对话类" data-text="文心一言 百度 对话">
-                  <div class="tool-card-top"><span class="tool-name">文心一言</span><span class="tool-access direct">可直连</span></div>
-                  <p class="tool-desc">百度出品，中文语境理解和国内本土知识（政策、本地生活）覆盖较好。</p>
-                  <p class="tool-how"><b>开通：</b>文心一言APP或官网，百度账号直接登录。</p>
-                </div>
-
-                <div class="tool-card" data-cat="对话类" data-text="通义千问 阿里 对话">
-                  <div class="tool-card-top"><span class="tool-name">通义千问</span><span class="tool-access direct">可直连</span></div>
+                <div class="tool-card" data-cat="对话类" data-text="通义千问 通用对话 办公 阿里出品，跟钉钉、淘宝等生态打通较好，办公场景用得多。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://tongyi.aliyun.com" target="_blank" rel="noopener">通义千问<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>通用对话</span><span>办公</span></div>
                   <p class="tool-desc">阿里出品，跟钉钉、淘宝等生态打通较好，办公场景用得多。</p>
+                  <p class="tool-price"><b>价格：</b>基础功能免费</p>
                   <p class="tool-how"><b>开通：</b>通义APP或 tongyi.aliyun.com，淘宝/支付宝账号可登录。</p>
                 </div>
 
-                <div class="tool-card" data-cat="写作办公" data-text="notion ai 笔记 写作">
-                  <div class="tool-card-top"><span class="tool-name">Notion AI</span><span class="tool-access">需外网</span></div>
-                  <p class="tool-desc">嵌在Notion笔记软件里的AI助手，边记笔记边让AI帮你润色、总结、翻译。</p>
-                  <p class="tool-how"><b>开通：</b>Notion账号内直接开通，按月付费叠加在原订阅上。</p>
+                <div class="tool-card" data-cat="对话类" data-text="文心一言 通用对话 本土知识 百度出品，中文语境理解和国内本土知识（政策、本地生活）覆盖较好。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://yiyan.baidu.com" target="_blank" rel="noopener">文心一言<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>通用对话</span><span>本土知识</span></div>
+                  <p class="tool-desc">百度出品，中文语境理解和国内本土知识（政策、本地生活）覆盖较好。</p>
+                  <p class="tool-price"><b>价格：</b>基础功能免费</p>
+                  <p class="tool-how"><b>开通：</b>文心一言APP或官网，百度账号直接登录。</p>
                 </div>
 
-                <div class="tool-card" data-cat="写作办公" data-text="gamma ppt 网页 排版">
-                  <div class="tool-card-top"><span class="tool-name">Gamma</span><span class="tool-access direct">可直连</span></div>
-                  <p class="tool-desc">说一句话就能自动生成一整套PPT或网页，不用自己一页页排版。</p>
-                  <p class="tool-how"><b>开通：</b>gamma.app 注册，免费版有生成额度。</p>
+                <div class="tool-card" data-cat="对话类" data-text="chatgpt 通用对话 写作 编程 openai出品，用户量最大的ai对话工具，写作、编程、分析都能顶，综合能力最全面。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT<span class="ext">↗</span></a><span class="tool-access ">需外网</span></div>
+                  <div class="tool-tags"><span>通用对话</span><span>写作</span><span>编程</span></div>
+                  <p class="tool-desc">OpenAI出品，用户量最大的AI对话工具，写作、编程、分析都能顶，综合能力最全面。</p>
+                  <p class="tool-price"><b>价格：</b>免费版够日常用，Plus订阅$20/月（约¥145）</p>
+                  <p class="tool-how"><b>开通：</b>官网 chat.openai.com 注册账号，需外网环境。</p>
                 </div>
 
-                <div class="tool-card" data-cat="写作办公" data-text="讯飞星火 科大讯飞 语音 会议纪要">
-                  <div class="tool-card-top"><span class="tool-name">讯飞星火</span><span class="tool-access direct">可直连</span></div>
+                <div class="tool-card" data-cat="对话类" data-text="claude 写作 长文本 编程 本站教学主打的工具，写作和长文本理解突出，也是“claude code”这类编程智能体的底座。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://claude.ai" target="_blank" rel="noopener">Claude<span class="ext">↗</span></a><span class="tool-access ">需外网</span></div>
+                  <div class="tool-tags"><span>写作</span><span>长文本</span><span>编程</span></div>
+                  <p class="tool-desc">本站教学主打的工具，写作和长文本理解突出，也是“Claude Code”这类编程智能体的底座。</p>
+                  <p class="tool-price"><b>价格：</b>免费版有额度限制，Pro订阅$20/月（约¥145）</p>
+                  <p class="tool-how"><b>开通：</b>官网 claude.ai 注册，需外网环境。</p>
+                </div>
+
+                <div class="tool-card" data-cat="对话类" data-text="gemini 通用对话 图片 长文档 谷歌出品，跟gmail、谷歌文档打通得好，处理图片和长文档能力强。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://gemini.google.com" target="_blank" rel="noopener">Gemini<span class="ext">↗</span></a><span class="tool-access ">需外网</span></div>
+                  <div class="tool-tags"><span>通用对话</span><span>图片</span><span>长文档</span></div>
+                  <p class="tool-desc">谷歌出品，跟Gmail、谷歌文档打通得好，处理图片和长文档能力强。</p>
+                  <p class="tool-price"><b>价格：</b>免费版可用，Google AI Pro约$20/月</p>
+                  <p class="tool-how"><b>开通：</b>gemini.google.com，用谷歌账号直接登录，需外网环境。</p>
+                </div>
+
+                <div class="tool-card" data-cat="写作办公" data-text="讯飞星火 语音转文字 会议纪要 科大讯飞出品，语音识别是强项，适合录音转文字、会议纪要这类场景。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://xinghuo.xfyun.cn" target="_blank" rel="noopener">讯飞星火<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>语音转文字</span><span>会议纪要</span></div>
                   <p class="tool-desc">科大讯飞出品，语音识别是强项，适合录音转文字、会议纪要这类场景。</p>
+                  <p class="tool-price"><b>价格：</b>基础功能免费</p>
                   <p class="tool-how"><b>开通：</b>讯飞星火APP或官网，手机号注册。</p>
                 </div>
 
-                <div class="tool-card" data-cat="图像类" data-text="midjourney 绘图 封面 discord">
-                  <div class="tool-card-top"><span class="tool-name">Midjourney</span><span class="tool-access">需外网</span></div>
-                  <p class="tool-desc">AI绘图里画面质感最强的工具之一，适合做封面图、海报这类需要"好看"的场景。</p>
-                  <p class="tool-how"><b>开通：</b>官网订阅，最低约10美元/月，目前主要在Discord里使用，有一定上手门槛。</p>
+                <div class="tool-card" data-cat="写作办公" data-text="gamma ppt 网页排版 说一句话就能自动生成一整套ppt或网页，不用自己一页页排版。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://gamma.app" target="_blank" rel="noopener">Gamma<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>PPT</span><span>网页排版</span></div>
+                  <p class="tool-desc">说一句话就能自动生成一整套PPT或网页，不用自己一页页排版。</p>
+                  <p class="tool-price"><b>价格：</b>免费版有生成额度，付费$8-20/月</p>
+                  <p class="tool-how"><b>开通：</b>gamma.app 注册，国内网页可直接访问。</p>
                 </div>
 
-                <div class="tool-card" data-cat="图像类" data-text="即梦ai 字节跳动 绘图 视频">
-                  <div class="tool-card-top"><span class="tool-name">即梦AI</span><span class="tool-access direct">可直连</span></div>
-                  <p class="tool-desc">字节跳动出品，国内可直接用的AI绘图/视频工具，操作简单，中文提示词理解好。</p>
+                <div class="tool-card" data-cat="写作办公" data-text="notion ai 笔记 润色总结 嵌在notion笔记软件里的ai助手，边记笔记边让ai帮你润色、总结、翻译。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://www.notion.so" target="_blank" rel="noopener">Notion AI<span class="ext">↗</span></a><span class="tool-access ">需外网</span></div>
+                  <div class="tool-tags"><span>笔记</span><span>润色总结</span></div>
+                  <p class="tool-desc">嵌在Notion笔记软件里的AI助手，边记笔记边让AI帮你润色、总结、翻译。</p>
+                  <p class="tool-price"><b>价格：</b>叠加在Notion订阅上，按月付费</p>
+                  <p class="tool-how"><b>开通：</b>Notion账号内直接开通，需外网环境。</p>
+                </div>
+
+                <div class="tool-card" data-cat="图像类" data-text="即梦ai 绘图 视频 动漫风 字节跳动出品，国内可直接用的ai绘图/视频工具，操作简单，中文提示词理解好，风格覆盖写实/动漫/国风都不错，与剪映深度集成。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://jimeng.jianying.com" target="_blank" rel="noopener">即梦AI<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>绘图</span><span>视频</span><span>动漫风</span></div>
+                  <p class="tool-desc">字节跳动出品，国内可直接用的AI绘图/视频工具，操作简单，中文提示词理解好，风格覆盖写实/动漫/国风都不错，与剪映深度集成。</p>
+                  <p class="tool-price"><b>价格：</b>基础会员约59-79元/月</p>
                   <p class="tool-how"><b>开通：</b>即梦APP或官网 jimeng.jianying.com。</p>
                 </div>
 
-                <div class="tool-card" data-cat="图像类" data-text="可灵ai 快手 绘图 视频">
-                  <div class="tool-card-top"><span class="tool-name">可灵AI</span><span class="tool-access direct">可直连</span></div>
-                  <p class="tool-desc">快手出品，国内AI图片+视频生成工具，视频生成这块口碑不错。</p>
+                <div class="tool-card" data-cat="图像类" data-text="可灵ai 绘图 视频 画质高 快手出品，国内ai图片+视频生成工具，画质和运镜控制在同类里数一数二，追求商业级质感、做漫剧短剧优先选它。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://klingai.com" target="_blank" rel="noopener">可灵AI<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>绘图</span><span>视频</span><span>画质高</span></div>
+                  <p class="tool-desc">快手出品，国内AI图片+视频生成工具，画质和运镜控制在同类里数一数二，追求商业级质感、做漫剧短剧优先选它。</p>
+                  <p class="tool-price"><b>价格：</b>会员30-100+元/月，钻石会员586元/月</p>
                   <p class="tool-how"><b>开通：</b>klingai.com，手机号注册。</p>
                 </div>
 
-                <div class="tool-card" data-cat="图像类" data-text="stable diffusion 开源 绘图">
-                  <div class="tool-card-top"><span class="tool-name">Stable Diffusion</span><span class="tool-access">看部署</span></div>
+                <div class="tool-card" data-cat="图像类" data-text="stable diffusion 绘图 开源 可本地部署 开源ai绘图模型，免费、可自己部署，但需要一点技术门槛（或用集成好的网页版）。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://stability.ai" target="_blank" rel="noopener">Stable Diffusion<span class="ext">↗</span></a><span class="tool-access ">看部署</span></div>
+                  <div class="tool-tags"><span>绘图</span><span>开源</span><span>可本地部署</span></div>
                   <p class="tool-desc">开源AI绘图模型，免费、可自己部署，但需要一点技术门槛（或用集成好的网页版）。</p>
+                  <p class="tool-price"><b>价格：</b>开源免费，第三方网页服务另计费</p>
                   <p class="tool-how"><b>开通：</b>本地部署，或找国内的第三方网页服务商。</p>
                 </div>
 
-                <div class="tool-card" data-cat="视频类" data-text="runway 视频 剪辑">
-                  <div class="tool-card-top"><span class="tool-name">Runway</span><span class="tool-access">需外网</span></div>
-                  <p class="tool-desc">AI视频生成和剪辑的老牌工具，很多AI短片创作者在用。</p>
-                  <p class="tool-how"><b>开通：</b>官网 runwayml.com 注册，免费版有生成额度。</p>
+                <div class="tool-card" data-cat="图像类" data-text="midjourney 绘图 封面图 质感强 ai绘图里画面质感最强的工具之一，适合做封面图、海报这类需要“好看”的场景，2026年起已取消免费试用。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://www.midjourney.com" target="_blank" rel="noopener">Midjourney<span class="ext">↗</span></a><span class="tool-access ">需外网</span></div>
+                  <div class="tool-tags"><span>绘图</span><span>封面图</span><span>质感强</span></div>
+                  <p class="tool-desc">AI绘图里画面质感最强的工具之一，适合做封面图、海报这类需要“好看”的场景，2026年起已取消免费试用。</p>
+                  <p class="tool-price"><b>价格：</b>最低档$10/月起（约¥72）</p>
+                  <p class="tool-how"><b>开通：</b>官网订阅，目前主要在Discord里使用，有一定上手门槛，需外网环境。</p>
                 </div>
 
-                <div class="tool-card" data-cat="视频类" data-text="剪映ai 字节跳动 剪辑 字幕 配音">
-                  <div class="tool-card-top"><span class="tool-name">剪映AI</span><span class="tool-access direct">可直连</span></div>
-                  <p class="tool-desc">国内最主流剪辑软件"剪映"自带的AI功能，AI配音、AI字幕、AI特效都在里面，做短视频的人基本都在用。</p>
+                <div class="tool-card" data-cat="视频类" data-text="剪映ai 剪辑 ai配音 字幕 国内最主流剪辑软件“剪映”自带的ai功能，ai配音、ai字幕、ai特效都在里面，做短视频的人基本都在用。上百种ai音色+语音克隆（录10秒样本克隆你的声音），零成本零学习门槛，是新手做号首选配音工具。局限是音色偏同质化、情绪调节档位少，商业投放需单独确认版权授权。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://www.capcut.cn" target="_blank" rel="noopener">剪映AI<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>剪辑</span><span>AI配音</span><span>字幕</span></div>
+                  <p class="tool-desc">国内最主流剪辑软件“剪映”自带的AI功能，AI配音、AI字幕、AI特效都在里面，做短视频的人基本都在用。上百种AI音色+语音克隆（录10秒样本克隆你的声音），零成本零学习门槛，是新手做号首选配音工具。局限是音色偏同质化、情绪调节档位少，商业投放需单独确认版权授权。</p>
+                  <p class="tool-price"><b>价格：</b>基础功能完全免费，无水印</p>
                   <p class="tool-how"><b>开通：</b>剪映APP内直接使用，大部分功能免费。</p>
                 </div>
 
-                <div class="tool-card" data-cat="视频类" data-text="sora openai 文生视频">
-                  <div class="tool-card-top"><span class="tool-name">Sora</span><span class="tool-access">需外网</span></div>
-                  <p class="tool-desc">OpenAI出品，文字生成视频的代表性工具，效果惊艳，但目前使用门槛和费用较高。</p>
-                  <p class="tool-how"><b>开通：</b>随ChatGPT高级订阅逐步开放。</p>
+                <div class="tool-card" data-cat="视频类" data-text="runway 视频生成 剪辑 ai视频生成和剪辑的老牌工具，很多ai短片创作者在用。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://runwayml.com" target="_blank" rel="noopener">Runway<span class="ext">↗</span></a><span class="tool-access ">需外网</span></div>
+                  <div class="tool-tags"><span>视频生成</span><span>剪辑</span></div>
+                  <p class="tool-desc">AI视频生成和剪辑的老牌工具，很多AI短片创作者在用。</p>
+                  <p class="tool-price"><b>价格：</b>免费版一次性125积分，Standard $12/月起</p>
+                  <p class="tool-how"><b>开通：</b>官网 runwayml.com 注册，需外网环境。</p>
                 </div>
 
-                <div class="tool-card" data-cat="编程自动化" data-text="claude code 编程 智能体 anthropic">
-                  <div class="tool-card-top"><span class="tool-name">Claude Code</span><span class="tool-access">需外网</span></div>
-                  <p class="tool-desc">本站反复提到的AI编程智能体，能直接帮你操作电脑完成任务，不只是聊天回答。</p>
-                  <p class="tool-how"><b>开通：</b>需要Claude账号+订阅，命令行工具官方文档有安装教程。</p>
+                <div class="tool-card" data-cat="视频类" data-text="sora 文生视频 openai出品，文字生成视频的代表性工具，但2026年4月已关闭网页和app端公开访问，目前仅对最高档chatgpt pro订阅用户开放，普通用户基本用不上了，了解概念即可。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://openai.com/sora" target="_blank" rel="noopener">Sora<span class="ext">↗</span></a><span class="tool-access blocked">大陆不可用</span></div>
+                  <div class="tool-tags"><span>文生视频</span></div>
+                  <p class="tool-desc">OpenAI出品，文字生成视频的代表性工具，但2026年4月已关闭网页和App端公开访问，目前仅对最高档ChatGPT Pro订阅用户开放，普通用户基本用不上了，了解概念即可。</p>
+                  <p class="tool-price"><b>价格：</b>随ChatGPT Pro订阅（$200/月）</p>
+                  <p class="tool-how"><b>开通：</b>目前已不对普通用户开放，不建议作为常规工具选择。</p>
                 </div>
 
-                <div class="tool-card" data-cat="编程自动化" data-text="cursor 编程 编辑器">
-                  <div class="tool-card-top"><span class="tool-name">Cursor</span><span class="tool-access">需外网</span></div>
+                <div class="tool-card" data-cat="编程自动化" data-text="claude code 编程 智能体 自动化操作 本站反复提到的ai编程智能体，能直接帮你操作电脑完成任务，不只是聊天回答，是效率提升最猛的一类工具。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://claude.com/claude-code" target="_blank" rel="noopener">Claude Code<span class="ext">↗</span></a><span class="tool-access ">需外网</span></div>
+                  <div class="tool-tags"><span>编程</span><span>智能体</span><span>自动化操作</span></div>
+                  <p class="tool-desc">本站反复提到的AI编程智能体，能直接帮你操作电脑完成任务，不只是聊天回答，是效率提升最猛的一类工具。</p>
+                  <p class="tool-price"><b>价格：</b>随Claude订阅，Pro $20/月起，Max套餐$100-200/月</p>
+                  <p class="tool-how"><b>开通：</b>需要Claude账号+订阅，命令行工具官方文档有安装教程，需外网环境。</p>
+                </div>
+
+                <div class="tool-card" data-cat="编程自动化" data-text="cursor 编程 代码编辑器 ai编程编辑器，很多程序员在用，能一边写代码一边让ai改。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://cursor.com" target="_blank" rel="noopener">Cursor<span class="ext">↗</span></a><span class="tool-access ">需外网</span></div>
+                  <div class="tool-tags"><span>编程</span><span>代码编辑器</span></div>
                   <p class="tool-desc">AI编程编辑器，很多程序员在用，能一边写代码一边让AI改。</p>
-                  <p class="tool-how"><b>开通：</b>官网 cursor.com 下载客户端。</p>
+                  <p class="tool-price"><b>价格：</b>$20/月起，顶级个人版$200/月</p>
+                  <p class="tool-how"><b>开通：</b>官网 cursor.com 下载客户端，需外网环境。</p>
                 </div>
 
-                <div class="tool-card" data-cat="编程自动化" data-text="manus 智能体 自动化">
-                  <div class="tool-card-top"><span class="tool-name">Manus</span><span class="tool-access direct">可直连</span></div>
-                  <p class="tool-desc">国内团队做的通用AI智能体，能自主完成"上网查资料+做PPT+写报告"这类复杂任务。</p>
-                  <p class="tool-how"><b>开通：</b>官网注册，早期阶段可能需要排队。</p>
-                </div>
-
-                <div class="tool-card" data-cat="编程自动化" data-text="dify 工作流 零代码">
-                  <div class="tool-card-top"><span class="tool-name">Dify</span><span class="tool-access direct">可直连</span></div>
+                <div class="tool-card" data-cat="编程自动化" data-text="dify 工作流搭建 零代码 国内团队做的ai应用搭建平台，不用写代码也能把ai工具串成自己的工作流。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://dify.ai" target="_blank" rel="noopener">Dify<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>工作流搭建</span><span>零代码</span></div>
                   <p class="tool-desc">国内团队做的AI应用搭建平台，不用写代码也能把AI工具串成自己的工作流。</p>
+                  <p class="tool-price"><b>价格：</b>有免费版，付费版按用量计费</p>
                   <p class="tool-how"><b>开通：</b>dify.ai 注册，有免费版。</p>
                 </div>
 
-                <div class="tool-card" data-cat="智能体其他" data-text="扣子 coze 字节跳动 机器人 零代码">
-                  <div class="tool-card-top"><span class="tool-name">扣子 Coze</span><span class="tool-access direct">可直连</span></div>
-                  <p class="tool-desc">字节跳动出品，拖拖拽拽就能做出自己的AI机器人，零代码门槛。</p>
+                <div class="tool-card" data-cat="编程自动化" data-text="manus 智能体 自动化 曾经一码难求的通用ai智能体，能自主完成“上网查资料+做ppt+写报告”这类复杂任务，但2026年1月起已停止对中国大陆用户开放，大陆ip访问官网会显示地区不可用，暂时用不了了。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://manus.im" target="_blank" rel="noopener">Manus<span class="ext">↗</span></a><span class="tool-access blocked">大陆不可用</span></div>
+                  <div class="tool-tags"><span>智能体</span><span>自动化</span></div>
+                  <p class="tool-desc">曾经一码难求的通用AI智能体，能自主完成“上网查资料+做PPT+写报告”这类复杂任务，但2026年1月起已停止对中国大陆用户开放，大陆IP访问官网会显示地区不可用，暂时用不了了。</p>
+                  <p class="tool-price"><b>价格：</b>Pro $20/月起</p>
+                  <p class="tool-how"><b>开通：</b>目前大陆无法直接访问，需要海外身份和网络环境。</p>
+                </div>
+
+                <div class="tool-card" data-cat="智能体其他" data-text="扣子 coze 机器人搭建 零代码 字节跳动出品，拖拖拽拽就能做出自己的ai机器人（比如客服机器人、内容生成机器人），零代码门槛。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://www.coze.cn" target="_blank" rel="noopener">扣子 Coze<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>机器人搭建</span><span>零代码</span></div>
+                  <p class="tool-desc">字节跳动出品，拖拖拽拽就能做出自己的AI机器人（比如客服机器人、内容生成机器人），零代码门槛。</p>
+                  <p class="tool-price"><b>价格：</b>基础功能免费</p>
                   <p class="tool-how"><b>开通：</b>coze.cn 注册即可用。</p>
                 </div>
 
-                <div class="tool-card" data-cat="智能体其他" data-text="飞书多维表格 表格 自动化">
-                  <div class="tool-card-top"><span class="tool-name">飞书多维表格AI</span><span class="tool-access direct">可直连</span></div>
+                <div class="tool-card" data-cat="智能体其他" data-text="飞书多维表格ai 表格自动化 内容打标 把ai能力嵌进表格里，自动分类、自动生成内容、自动打标签。">
+                  <div class="tool-card-top"><a class="tool-name" href="https://www.feishu.cn" target="_blank" rel="noopener">飞书多维表格AI<span class="ext">↗</span></a><span class="tool-access direct">可直连</span></div>
+                  <div class="tool-tags"><span>表格自动化</span><span>内容打标</span></div>
                   <p class="tool-desc">把AI能力嵌进表格里，自动分类、自动生成内容、自动打标签。</p>
+                  <p class="tool-price"><b>价格：</b>随飞书订阅，个人基础功能免费</p>
                   <p class="tool-how"><b>开通：</b>飞书内直接开通，无需额外安装。</p>
                 </div>
-
               </div>
             </div>
           </div>
@@ -343,21 +387,23 @@
               <p class="ai-sec-desc">前两层是基础，这一层是实战——Claude Code、Skills、人设提示词、内容Prompt库，怎么用在做号的每一步上。</p>
             </div>
             <div class="subgrid">
-        <div class="subcard" id="ai-tools">
-          <div class="subcard-top"><div class="subcard-title">AI 工具实操</div></div>
-          <p class="subcard-desc">Claude Code、Skills、智能体怎么用在做号的每一步上。这一类目前还没有对应资料，先留位置，不编内容凑数。</p>
+        <div class="subcard" id="ai-skills">
+          <div class="subcard-top"><div class="subcard-title">我的Skills与教程</div></div>
+          <p class="subcard-desc">我自己在用的自媒体Skills（选题、脚本、演示画板……）直接下载拿去用，再加上手把手的实操教程。这一栏会持续更新，不是一次性写完就不动了。</p>
           <div class="entry-list">
+            <div class="entry"><div style="flex:1"><p class="entry-title">Skills下载库</p><p class="entry-sub">上传/下载功能建设中，上线后这里会列出所有可下载的Skill文件，我自己上传，任何人都能下载</p></div><span class="chip">建设中</span></div>
             <div class="entry"><div style="flex:1"><p class="entry-title">Claude Code 从零上手：普通人也能用的AI工作流</p><p class="entry-sub">从安装到第一次让AI帮你写逐字稿</p></div><span class="chip">待写</span></div>
             <div class="entry"><div style="flex:1"><p class="entry-title">我用的自媒体 Skills 清单</p><p class="entry-sub">选题、脚本、演示画板，一步步怎么串起来</p></div><span class="chip">待写</span></div>
           </div>
         </div>
 
-        <div class="subcard" id="ai-persona">
-          <div class="subcard-top"><div class="subcard-title">人设提示词</div></div>
-          <p class="subcard-desc">复制进任意AI工具，直接开始对话——不是让AI答题，是让AI扮演一个思维框架跟你对话。</p>
+        <div class="subcard" id="ai-prompts">
+          <div class="subcard-top"><div class="subcard-title">提示词库</div></div>
+          <p class="subcard-desc">人设类（复制进AI工具直接对话）+ 功能类（100个按场景分类），不用来回找，都在这一栏。</p>
+          <p style="font-size:13px;font-weight:700;color:var(--ink-soft);margin:4px 0 10px;">人设提示词 · 3个完整框架</p>
           <div class="entry-list">
             <details class="entry-d">
-              <summary><div style="flex:1"><p class="entry-title">HUMAN 3.0 中文提示词</p><p class="entry-sub">四象限人生发展评估框架，中文版</p></div><span class="entry-arrow">▸</span></summary>
+              <summary><div style="flex:1"><p class="entry-title">HUMAN 3.0 中文提示词</p><p class="entry-sub">四象限人生发展评估框架，中文版</p></div><span class="entry-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></span></summary>
               <div class="entry-body">
                 <p class="copy-hint">点一下文本框，全选后复制：</p>
                 <textarea class="prompt-textarea" readonly onclick="this.select()">您是专门研究您是专门研究 HUMAN 3.0 模型的直接、有见地的开发评估员。您进行适应性访谈，以确定某人在四个象限中的当前发展，识别他们的元类型和生活方式原型，并通过解决问题的视角提供可操作的转型策略。你尊重地说出残酷的真相，帮助人们看穿自己的错误转变，同时认识到真正的成长机会。你明白，真正的发展意味着创造一个综合的生活方式，所有象限相互支持，而不是通过意志力来强迫平衡。您对故障有深刻的理解——高风险加速剂，可以根据用户的基础来催化突破或导致灾难性失败。
@@ -802,7 +848,7 @@ HUMAN 3.0 是一个“多维千斤顶”的综合框架——在所有生命领�
               </div>
             </details>
             <details class="entry-d">
-              <summary><div style="flex:1"><p class="entry-title">HUMAN 3.0 官方英文提示词</p><p class="entry-sub">同一套框架的官方英文原版</p></div><span class="entry-arrow">▸</span></summary>
+              <summary><div style="flex:1"><p class="entry-title">HUMAN 3.0 官方英文提示词</p><p class="entry-sub">同一套框架的官方英文原版</p></div><span class="entry-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></span></summary>
               <div class="entry-body">
                 <p class="copy-hint">点一下文本框，全选后复制：</p>
                 <textarea class="prompt-textarea" readonly onclick="this.select()">You are a direct, insightful development assessor specializing in the HUMAN 3.0 model. You conduct adaptive interviews to determine someone's current development across four quadrants, identify their Metatype and Lifestyle Archetype, and provide actionable transformation strategies through a problem-solving lens. You tell hard truths with respect, helping people see through their own false transformations while recognizing genuine growth opportunities. You understand that true development means creating an integrated lifestyle where all quadrants support each other, not forcing balance through willpower. You have deep understanding of Glitches—high-risk accelerants that can catalyze breakthroughs or cause catastrophic failure depending on the user's foundation.
@@ -1719,7 +1765,7 @@ REMEMBER: You're not trying to balance all quadrants through force. You're solvi
               </div>
             </details>
             <details class="entry-d">
-              <summary><div style="flex:1"><p class="entry-title">查理芒格商业级顾问提示词</p><p class="entry-sub">用芒格的思维框架审视你的定价假设</p></div><span class="entry-arrow">▸</span></summary>
+              <summary><div style="flex:1"><p class="entry-title">查理芒格商业级顾问提示词</p><p class="entry-sub">用芒格的思维框架审视你的定价假设</p></div><span class="entry-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></span></summary>
               <div class="entry-body">
                 <p class="copy-hint">点一下文本框，全选后复制：</p>
                 <textarea class="prompt-textarea" readonly onclick="this.select()">这是一套基于《芒格之道》和《穷查理宝典》中查理·芒格核心思维框架设计的商业顾问级提示词。你可以将其直接复制到任何主流 AI 工具（如 ChatGPT、Claude 等）中使用。
@@ -1802,11 +1848,7 @@ Lollapalooza 效应预演：如果你的定价包含心理学上的“社会认�
               </div>
             </details>
           </div>
-        </div>
-
-        <div class="subcard" id="ai-prompts">
-          <div class="subcard-top"><div class="subcard-title">提示词库</div></div>
-          <p class="subcard-desc">100个实用AI功能提示词，按场景分了10个模块。</p>
+          <p style="font-size:13px;font-weight:700;color:var(--ink-soft);margin:28px 0 10px;">功能提示词 · 100个按场景分类</p>
           <div class="promptlib">
             <div class="promptlib-controls">
               <input class="promptlib-search" id="prompt-search" type="text" placeholder="搜标题，比如「选题」「脚本」「涨粉」…">
@@ -1840,7 +1882,7 @@ Lollapalooza 效应预演：如果你的定价包含心理学上的“社会认�
           <p class="subcard-desc">不是"多写多练"这种正确废话，是具体的判断标准。</p>
           <div class="entry-list">
             <details class="entry-d">
-              <summary><div style="flex:1"><p class="entry-title">我用AI一周写出10条百万播放量文案！（附提示词和教学）</p><p class="entry-sub">我写的很多百万爆款内容，被同行抄过很多次……今天想说一个可能会被骂的观点：新人阶段要学会"聪明地抄"。</p></div><span class="entry-arrow">▸</span></summary>
+              <summary><div style="flex:1"><p class="entry-title">我用AI一周写出10条百万播放量文案！（附提示词和教学）</p><p class="entry-sub">我写的很多百万爆款内容，被同行抄过很多次……今天想说一个可能会被骂的观点：新人阶段要学会"聪明地抄"。</p></div><span class="entry-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></span></summary>
               <div class="entry-body"><h3>我用AI一周写出10条百万播放量文案！（附提示词和教学）</h3>
 <img src="img-webp-01.webp" style="border-radius:8px;border:1px solid var(--rule);margin:12px 0;" alt="原文配图">
 <img src="img-webp-02.webp" style="border-radius:8px;border:1px solid var(--rule);margin:12px 0;" alt="原文配图">
@@ -1898,7 +1940,7 @@ Lollapalooza 效应预演：如果你的定价包含心理学上的“社会认�
 </div>
             </details>
             <details class="entry-d">
-              <summary><div style="flex:1"><p class="entry-title">为什么你写出来的文案永远有AI味</p><p class="entry-sub">任何一篇脚本都由两层组成：知识结构（讲了什么）和元结构（管理观众此刻的状态）——大多数人只会分析知识结构，这就是AI味的根源。</p></div><span class="entry-arrow">▸</span></summary>
+              <summary><div style="flex:1"><p class="entry-title">为什么你写出来的文案永远有AI味</p><p class="entry-sub">任何一篇脚本都由两层组成：知识结构（讲了什么）和元结构（管理观众此刻的状态）——大多数人只会分析知识结构，这就是AI味的根源。</p></div><span class="entry-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></span></summary>
               <div class="entry-body"><h3>为什么你写出来的文案永远有AI味</h3>
 <p>元结构分层</p>
 <p>原始案例</p>
@@ -1959,7 +2001,7 @@ Lollapalooza 效应预演：如果你的定价包含心理学上的“社会认�
           <p class="subcard-desc">关于变现、时间分配、要不要接咨询的真实思考，必看。</p>
           <div class="entry-list">
             <details class="entry-d">
-              <summary><div style="flex:1"><p class="entry-title">2026年没工作，可能是你这辈子最好的一件事</p><p class="entry-sub">怎么把"被裁"这件事，转成"一人公司"的起点</p></div><span class="entry-arrow">▸</span></summary>
+              <summary><div style="flex:1"><p class="entry-title">2026年没工作，可能是你这辈子最好的一件事</p><p class="entry-sub">怎么把"被裁"这件事，转成"一人公司"的起点</p></div><span class="entry-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></span></summary>
               <div class="entry-body"><h3>2026年没工作，可能是你这辈子最好的一件事</h3>
 <p>如果你正待业在家，或者有一份工作，但想找一个新出路，这篇文章你一定不能错过。</p>
 <p>因为2026年，会成为所有一人公司、超级个体起飞的节点。</p>
@@ -2038,7 +2080,7 @@ Lollapalooza 效应预演：如果你的定价包含心理学上的“社会认�
 </div>
             </details>
             <details class="entry-d">
-              <summary><div style="flex:1"><p class="entry-title">一人公司深度解读</p><p class="entry-sub">一人公司到底是怎么运转的，具体拆解</p></div><span class="entry-arrow">▸</span></summary>
+              <summary><div style="flex:1"><p class="entry-title">一人公司深度解读</p><p class="entry-sub">一人公司到底是怎么运转的，具体拆解</p></div><span class="entry-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></span></summary>
               <div class="entry-body"><h3>一人公司深度解读</h3>
 <p>我放弃底薪2万的薪资去做一人公司。</p>
 <p>结果发现，连"一人公司"是什么，我都理解错了。</p>
@@ -2115,7 +2157,7 @@ Lollapalooza 效应预演：如果你的定价包含心理学上的“社会认�
 </div>
             </details>
             <details class="entry-d">
-              <summary><div style="flex:1"><p class="entry-title">做一人公司，首先你要学的是做自媒体，不是学技术</p><p class="entry-sub">技术不是门槛，表达能力才是</p></div><span class="entry-arrow">▸</span></summary>
+              <summary><div style="flex:1"><p class="entry-title">做一人公司，首先你要学的是做自媒体，不是学技术</p><p class="entry-sub">技术不是门槛，表达能力才是</p></div><span class="entry-arrow"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></span></summary>
               <div class="entry-body"><h3>做一人公司，首先你要学的是做自媒体，不是学技术。</h3>
 <p>大多数人第一反应：不对吧，技术都没有，拿什么单干？</p>
 <p>这个反应本身，就说明你走的还是打工人的逻辑。</p>
@@ -2194,6 +2236,9 @@ Lollapalooza 效应预演：如果你的定价包含心理学上的“社会认�
           </div>
         </div>
         <div class="bio-body">
+          <p style="font-size:15px;"><b style="color:var(--ink);">先说结果，再讲故事。</b>影视专业出身，做过IP孵化公司的项目组长——Web3赛道2个月涨粉12万，餐饮矩阵做到抖音9-10万粉，商业IP参与操盘的项目GMV近500亿，案例库里都有真实截图，不是嘴上说的。现在自己一个人做一人公司，知识星球运营5个多月变现50万。</p>
+          <p style="color:var(--gray);font-size:13.5px;">下面这段是我怎么走到今天这一步的背景故事。赶时间的话，直接跳到最下面看知识星球就行。</p>
+          <hr style="border:none;border-top:1px solid var(--rule);margin:24px 0;">
           <p>首先这个人我相信大家做过知识付费的都认识吧，没错他就是参哥，我的前前前老板！</p>
           <p>你可能听说过参哥这个名字。钳工出身，中专学历，靠卖海参起家，后来做抖音IP孵化，4年公司营收据说超过10亿。网上对他的评价从来就没统一过。有人说他是割韭菜的江湖骗子，课程全是正确的废话；有人说他改变了自己的命运，是真正懂商业的人。百度前副总裁璩静花5980元上了他三天的操盘课，课后发布了一系列争议视频，最终被李彦宏秒批离职申请，"五千块学费换来千万年薪归零"的段子传遍全网。</p>
           <p>但今天我不想跟你讨论参哥这个人对不对，值不值。因为我在他公司待了整整一年半，我想说的是：那段时间让我看到了一些东西，跟他本人没什么关系，但跟我自己的成长关系很大。</p>
@@ -2246,34 +2291,21 @@ Lollapalooza 效应预演：如果你的定价包含心理学上的“社会认�
       <div class="funnel-banner" id="banner-products"></div>
       <div class="sec-head" style="display:block;">
         <p class="page-intro-eyebrow mono">我的产品</p>
-        <h2 class="sec-title serif">免费资料看完了，这两样是正餐。</h2>
-        <p class="sec-sub">不装大而全，就两样东西——一个自己学，一个直接问我。</p>
+        <h2 class="sec-title serif">免费资料看完了，这是正餐。</h2>
+        <p class="sec-sub">不装大而全，就一件事——把免费区没有的东西，全放这里。</p>
       </div>
 
       <div class="ticket" id="planet-cta" style="margin-bottom:20px;">
-        <p class="ticket-eyebrow mono">产品一 · 知识星球</p>
-        <h2>更细的实操拆解，我每天的操盘记录。</h2>
-        <p>提示词库之外的完整方法论、案例复盘、我自己每天在做什么、遇到问题怎么判断——这些不放在免费区，放在知识星球里，社群内直接提问我会回。</p>
+        <p class="ticket-eyebrow mono">知识星球</p>
+        <h2>半年变现50万，我把过程全记下来了。</h2>
+        <p>这个星球运营5个多月了，更新的不是"今天天气不错"这种碎碎念，是一整套系列——定位怎么定、流量怎么起、变现怎么落地，每一篇都有能直接拿去用的框架，比如"利润=（客单价－边际交付成本）×销量"这类公式，不是听起来对、但落不了地的正确废话。我自己做过4年IP操盘手，服务过头部内容团队和二三十个老板级IP，这些一线摸出来的东西，很多没写进免费区，直接放在星球里。加入是从第一篇开始看，不是从你加入那天才算数。</p>
+        <p style="margin:14px 0 0;font-size:14px;color:var(--paper);opacity:.82;"><b style="color:var(--accent);">适合：</b>想认真做AI+自媒体、愿意自己动手的人。&nbsp;&nbsp;<b style="color:var(--accent);">不适合：</b>只想收藏不想用的人——这里的东西是用来落地的，不是用来囤的。</p>
         <div class="ticket-bottom">
           <div class="price"><span class="num">365</span> 元 / 年</div>
           <a class="btn" href="https://t.zsxq.com/LnI96" target="_blank" rel="noopener">
             进知识星球
             <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-        </div>
-      </div>
-
-      <div class="subcard" style="padding:32px;">
-        <div class="subcard-top" style="margin-bottom:10px;">
-          <div class="subcard-title" style="font-size:19px;">产品二 · 一对一咨询</div>
-        </div>
-        <p class="subcard-desc" style="max-width:60ch;font-size:14px;">你的账号具体卡在哪一步，20分钟直接聊透——不是通用建议，是看着你的账号给判断。适合已经动手做了、卡在具体问题上的人，不适合还没想清楚要不要开始的人。</p>
-        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:18px;">
-          <div class="mono" style="font-size:13px;color:var(--gray);">199 元 / 20 分钟</div>
-          <div class="contact-qr-box">
-            <div class="contact-qr-frame"><img src="img-jpg-07.jpg" alt="卫威微信二维码"></div>
-            <div class="contact-qr-label mono">扫码加微信预约</div>
-          </div>
         </div>
       </div>
     </div>
