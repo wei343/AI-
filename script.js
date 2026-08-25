@@ -21,7 +21,7 @@
     el.addEventListener('click', function () { goto(el.getAttribute('data-goto')); });
   });
 
-  // ---------- 诊断漏斗：点了直接跳页 + 顶部提示条 ----------
+  var menuToggle = document.getElementById('menu-toggle'); var pagesNav = document.querySelector('nav.pages'); if (menuToggle && pagesNav) { menuToggle.addEventListener('click', function () { pagesNav.classList.toggle('nav-open'); }); pagesNav.querySelectorAll('[data-goto]').forEach(function (btn) { btn.addEventListener('click', function () { pagesNav.classList.remove('nav-open'); }); }); } // ---------- 诊断漏斗：点了直接跳页 + 顶部提示条 ----------
   var FUNNEL = {
     newbie: {
       page: 'about',
